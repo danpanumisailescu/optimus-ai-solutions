@@ -1,6 +1,6 @@
 /* ==========================================================================
    OPTIMUS AI SOLUTIONS SRL - Main JavaScript
-   Features: Bilingual Dictionary (EN / RO), Theme Toggle, Native Dialog & Form
+   Features: Bilingual Dictionary (EN / RO), Theme Toggle & Native Dialog
    ========================================================================== */
 
 // 1. Translations Dictionary (Romanian & English)
@@ -52,12 +52,6 @@ const translations = {
     c_company_lbl: "Companie:",
     c_location_lbl: "Sediu:",
     c_email_lbl: "Email Suport:",
-    form_title: "Trimite un Mesaj",
-    form_name: "Nume complet",
-    form_email: "Adresă Email",
-    form_message: "Mesaj",
-    form_submit: "Trimite Mesajul",
-    form_success: "Vă mulțumim! Mesajul dvs. a fost înregistrat.",
 
     // Footer & Legal
     footer_rights: "© 2026 OPTIMUS AI SOLUTIONS SRL. Toate drepturile rezervate.",
@@ -117,12 +111,6 @@ const translations = {
     c_company_lbl: "Company:",
     c_location_lbl: "Location:",
     c_email_lbl: "Support Email:",
-    form_title: "Send a Message",
-    form_name: "Full Name",
-    form_email: "Email Address",
-    form_message: "Message",
-    form_submit: "Send Message",
-    form_success: "Thank you! Your message has been recorded.",
 
     // Footer & Legal
     footer_rights: "© 2026 OPTIMUS AI SOLUTIONS SRL. All rights reserved.",
@@ -141,7 +129,6 @@ let currentLang = 'ro';
 document.addEventListener('DOMContentLoaded', () => {
   const langToggleBtn = document.getElementById('lang-toggle');
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const contactForm = document.getElementById('contact-form');
   const termsModal = document.getElementById('terms-modal');
   const openTermsBtn = document.getElementById('open-terms-btn');
   const closeTermsBtn = document.getElementById('close-terms-btn');
@@ -181,13 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
   langToggleBtn?.addEventListener('click', () => {
     const nextLang = currentLang === 'ro' ? 'en' : 'ro';
     setLanguage(nextLang);
-  });
-
-  // --- Contact Form Handler ---
-  contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert(translations[currentLang].form_success);
-    contactForm.reset();
   });
 
   // --- Native Dialog Fallback for Invoker Commands & closedby="any" ---
