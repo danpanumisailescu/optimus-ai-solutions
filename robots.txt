@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://optimus-ai-solutions-srl.github.io/sitemap.xml
+Sitemap: https://optimus-ai-solutions.pages.dev/sitemap.xml
