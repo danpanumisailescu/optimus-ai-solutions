@@ -1,302 +1,529 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OPTIMUS AI SOLUTIONS SRL | Apps &amp; Software Solutions</title>
-  <meta name="description" content="OPTIMUS AI SOLUTIONS SRL - Dezvoltare aplicații mobile și soluții software. Descoperă Examen Vânător - aplicația de pregătire pentru examenul de vânătoare din România." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPTIMUS AI SOLUTIONS SRL | Apps &amp; Software Solutions</title>
+    <meta
+      name="description"
+      content="OPTIMUS AI SOLUTIONS SRL - Dezvoltare aplicații mobile și soluții software. Descoperă Examen Vânător - aplicația de pregătire pentru examenul de vânătoare din România."
+    />
 
-  <!-- Google Search Console Verification Meta Tag -->
-  <meta name="google-site-verification" content="KTGLfPyaPjV80IaAhPNQSvZlslFzIyE0q-LJDLgHIGs" />
+    <!-- Google Search Console Verification Meta Tag -->
+    <meta
+      name="google-site-verification"
+      content="KTGLfPyaPjV80IaAhPNQSvZlslFzIyE0q-LJDLgHIGs"
+    />
 
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="OPTIMUS AI SOLUTIONS SRL | Mobile Apps &amp; Software" />
-  <meta property="og:description" content="Official website of OPTIMUS AI SOLUTIONS SRL. Developers of Examen Vânător app and general software solutions." />
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="OPTIMUS AI SOLUTIONS SRL | Mobile Apps &amp; Software"
+    />
+    <meta
+      property="og:description"
+      content="Official website of OPTIMUS AI SOLUTIONS SRL. Developers of Examen Vânător app and general software solutions."
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Header / Navigation -->
-  <header class="site-header" id="header">
-    <div class="container header-container">
-      <a href="#" class="brand-logo" aria-label="OPTIMUS AI SOLUTIONS SRL Home">
-        <div class="logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header" id="header">
+      <div class="container header-container">
+        <a
+          href="#"
+          class="brand-logo"
+          aria-label="OPTIMUS AI SOLUTIONS SRL Home"
+        >
+          <div class="logo-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2L2 7L12 12L22 7L12 2Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 17L12 22L22 17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 12L12 17L22 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">OPTIMUS AI</span>
+            <span class="brand-sub">SOLUTIONS SRL</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu" aria-label="Navigare principală">
+          <a href="#about" class="nav-link" data-i18n="nav_about">Despre Noi</a>
+          <a href="#examen-vanator" class="nav-link" data-i18n="nav_app"
+            >Examen Vânător</a
+          >
+          <a href="#features" class="nav-link" data-i18n="nav_features"
+            >Beneficii</a
+          >
+          <a href="#contact" class="nav-link" data-i18n="nav_contact"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="header-actions">
+          <!-- Language Switcher Button -->
+          <button
+            type="button"
+            id="lang-toggle"
+            class="btn-icon-text"
+            aria-label="Switch language"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              ></path>
+            </svg>
+            <span id="lang-label">RO / EN</span>
+          </button>
+
+          <!-- Theme Switcher Button -->
+          <button
+            type="button"
+            id="theme-toggle"
+            class="btn-icon"
+            aria-label="Toggle theme"
+          >
+            <svg
+              class="sun-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
         </div>
-        <div class="brand-text">
-          <span class="brand-name">OPTIMUS AI</span>
-          <span class="brand-sub">SOLUTIONS SRL</span>
-        </div>
-      </a>
-
-      <nav class="nav-menu" id="nav-menu" aria-label="Navigare principală">
-        <a href="#about" class="nav-link" data-i18n="nav_about">Despre Noi</a>
-        <a href="#examen-vanator" class="nav-link" data-i18n="nav_app">Examen Vânător</a>
-        <a href="#features" class="nav-link" data-i18n="nav_features">Beneficii</a>
-        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <!-- Language Switcher Button -->
-        <button type="button" id="lang-toggle" class="btn-icon-text" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-          </svg>
-          <span id="lang-label">RO / EN</span>
-        </button>
-
-        <!-- Theme Switcher Button -->
-        <button type="button" id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
-          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge glow-badge" data-i18n="hero_badge">Dezvoltare Aplicații Mobile &amp; Software</div>
-          <h1 class="hero-title" data-i18n="hero_title">
-            Inovație Tehnologică și Aplicații Smart pentru Utilizatori
-          </h1>
-          <p class="hero-subtitle" data-i18n="hero_subtitle">
-            OPTIMUS AI SOLUTIONS SRL este o companie dedicată construirii de aplicații mobile performante, soluții bazate pe inteligență artificială și software utilitar conceput pentru a simplifica viața de zi cu zi.
-          </p>
-          <div class="hero-buttons">
-            <a href="#examen-vanator" class="btn btn-primary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-              <span data-i18n="hero_btn_app">Descoperă Examen Vânător</span>
-            </a>
-            <a href="#about" class="btn btn-outline" data-i18n="hero_btn_about">Află Despre Companie</a>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="badge glow-badge" data-i18n="hero_badge">
+              Dezvoltare Aplicații Mobile &amp; Software
+            </div>
+            <h1 class="hero-title" data-i18n="hero_title">
+              Inovație Tehnologică și Aplicații Smart pentru Utilizatori
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+              OPTIMUS AI SOLUTIONS SRL este o companie dedicată construirii de
+              aplicații mobile performante, soluții bazate pe inteligență
+              artificială și software utilitar.
+            </p>
+            <div class="hero-buttons">
+              <a href="#examen-vanator" class="btn btn-primary">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span data-i18n="hero_btn_app">Descoperă Examen Vânător</span>
+              </a>
+              <a
+                href="#about"
+                class="btn btn-outline"
+                data-i18n="hero_btn_about"
+                >Află Despre Companie</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="app-mockup-card glass-panel">
+              <div class="mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="mockup-title">Examen Vânător</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-badge">
+                  <span class="live-pulse" aria-hidden="true"></span>
+                  <span data-i18n="mockup_badge">Aplicație Mobilă</span>
+                </div>
+                <div class="mockup-app-icon">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="9" stroke="var(--accent)" />
+                    <path
+                      d="M12 7V17M7 12H17"
+                      stroke="var(--accent)"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <h2 class="mockup-app-title">Examen Vânător</h2>
+                <p class="mockup-app-desc" data-i18n="mockup_desc">
+                  Aplicație mobilă educațională destinată pregătirii
+                  candidaților pentru obținerea permisului de vânătoare în
+                  România.
+                </p>
+                <div class="mockup-actions">
+                  <a
+                    href="/examen-vanator/privacy-policy"
+                    class="btn btn-outline btn-sm"
+                    data-i18n="app_privacy_link"
+                  >
+                    Politica de Confidențialitate (Privacy Policy)
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-visual">
-          <div class="app-mockup-card glass-panel">
-            <div class="mockup-header">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-              <span class="mockup-title">Examen Vânător</span>
-            </div>
-            <div class="mockup-body">
-              <div class="mockup-badge">
-                <span class="live-pulse" aria-hidden="true"></span>
-                <span data-i18n="mockup_badge">Aplicație Mobilă</span>
-              </div>
-              <div class="mockup-app-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                  <circle cx="12" cy="12" r="9" stroke="var(--accent)"/>
-                  <path d="M12 7V17M7 12H17" stroke="var(--accent)" stroke-width="2"/>
+      <!-- Company Overview / About Us Section -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-subtitle" data-i18n="about_subtitle"
+              >Cine Suntem</span
+            >
+            <h2 class="section-title" data-i18n="about_title">
+              OPTIMUS AI SOLUTIONS SRL
+            </h2>
+            <div class="title-bar"></div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card glass-card">
+              <div class="card-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h2 class="mockup-app-title">Examen Vânător</h2>
-              <p class="mockup-app-desc" data-i18n="mockup_desc">
-                Aplicație mobilă educațională destinată pregătirii candidaților pentru obținerea permisului de vânătoare în România.
+              <h3 data-i18n="about_card1_title">Dezvoltare Software General</h3>
+              <p data-i18n="about_card1_text">
+                Creăm aplicații software adaptate cerințelor moderne, punând
+                accent pe viteză, securitate și o experiență de utilizare extrem
+                de intuitivă.
               </p>
-              <div class="mockup-actions">
-                <a href="/examen-vanator/privacy-policy" class="btn btn-outline btn-sm" data-i18n="app_privacy_link">
-                  Politica de Confidențialitate (Privacy Policy)
-                </a>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="card-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
               </div>
+              <h3 data-i18n="about_card2_title">
+                Aplicații Mobile Mobile-First
+              </h3>
+              <p data-i18n="about_card2_text">
+                Ne specializăm în aplicații Android și iOS orientate către
+                rezolvarea de probleme specifice, oferind instrumente
+                educaționale și de pregătire profesională.
+              </p>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="card-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                  <path d="M12 12L2.5 7.5"></path>
+                  <path d="M12 12V22"></path>
+                </svg>
+              </div>
+              <h3 data-i18n="about_card3_title">
+                Inteligență Artificială &amp; Utilitare
+              </h3>
+              <p data-i18n="about_card3_text">
+                Integrăm algoritmi inteligenți pentru optimizarea învățării,
+                repetarea spațiată și generarea de analize statistice utile
+                utilizatorilor noștri.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Company Overview / About Us Section -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-subtitle" data-i18n="about_subtitle">Cine Suntem</span>
-          <h2 class="section-title" data-i18n="about_title">OPTIMUS AI SOLUTIONS SRL</h2>
-          <div class="title-bar"></div>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card glass-card">
-            <div class="card-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <h3 data-i18n="about_card1_title">Dezvoltare Software General</h3>
-            <p data-i18n="about_card1_text">Creăm aplicații software adaptate cerințelor moderne, punând accent pe viteză, securitate și o experiență de utilizare extrem de intuitivă.</p>
-          </div>
-
-          <div class="about-card glass-card">
-            <div class="card-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
-            </div>
-            <h3 data-i18n="about_card2_title">Aplicații Mobile Mobile-First</h3>
-            <p data-i18n="about_card2_text">Ne specializăm în aplicații Android și iOS orientate către rezolvarea de probleme specifice, oferind instrumente educaționale și de pregătire profesională.</p>
-          </div>
-
-          <div class="about-card glass-card">
-            <div class="card-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
-                <path d="M12 12L2.5 7.5"></path>
-                <path d="M12 12V22"></path>
-              </svg>
-            </div>
-            <h3 data-i18n="about_card3_title">Inteligență Artificială &amp; Utilitare</h3>
-            <p data-i18n="about_card3_text">Integrăm algoritmi inteligenți pentru optimizarea învățării, repetarea spațiată și generarea de analize statistice utile utilizatorilor noștri.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Examen Vanator App Section -->
-    <section class="section app-showcase-section" id="examen-vanator">
-      <div class="container">
-        <div class="article-wrapper app-summary-card glass-panel">
-          <h2 class="article-title">Examen Vânător</h2>
-          <p class="lead-text app-summary-desc" data-i18n="app_short_desc">
-            Aplicație mobilă educațională destinată pregătirii candidaților pentru obținerea permisului de vânătoare în România.
-          </p>
-          <div class="app-summary-actions">
-            <a href="/examen-vanator/privacy-policy" class="btn btn-primary" data-i18n="app_privacy_link">
-              Politica de Confidențialitate (Privacy Policy)
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key App Benefits Section -->
-    <section class="section features-section" id="features">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-subtitle" data-i18n="feat_subtitle">De Ce OPTIMUS AI SOLUTIONS?</span>
-          <h2 class="section-title" data-i18n="feat_title">Standarde de Calitate &amp; Încredere</h2>
-          <div class="title-bar"></div>
-        </div>
-
-        <div class="features-grid">
-          <div class="feature-card glass-card">
-            <div class="f-num">01</div>
-            <h3 data-i18n="f_card1_title">Garanția Calității</h3>
-            <p data-i18n="f_card1_text">Toate aplicațiile noastre sunt verificate riguros pentru a oferi stabilitate maximă și securitate datelor utilizatorilor.</p>
-          </div>
-          <div class="feature-card glass-card">
-            <div class="f-num">02</div>
-            <h3 data-i18n="f_card2_title">Actualizări Periodice</h3>
-            <p data-i18n="f_card2_text">Actualizăm constant conținutul și codul aplicațiilor pentru a fi conforme cu ultimele cerințe și versiuni de sisteme de operare.</p>
-          </div>
-          <div class="feature-card glass-card">
-            <div class="f-num">03</div>
-            <h3 data-i18n="f_card3_title">Suport Tehnic Dedicat</h3>
-            <p data-i18n="f_card3_text">Echipa noastră răspunde prompt feedback-ului și solicitărilor de asistență din partea utilizatorilor.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact & Company Details Section -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="contact-card glass-panel">
-          <div class="contact-info">
-            <span class="section-subtitle" data-i18n="contact_subtitle">Contactează-ne</span>
-            <h2 data-i18n="contact_title">OPTIMUS AI SOLUTIONS SRL</h2>
-            <p data-i18n="contact_desc">
-              Dacă ai întrebări referitoare la aplicația Examen Vânător, sugestii de îmbunătățire sau dorești să colaborăm, nu ezita să ne trimiți un mesaj.
+      <!-- Examen Vanator App Section -->
+      <section class="section app-showcase-section" id="examen-vanator">
+        <div class="container">
+          <div class="article-wrapper app-summary-card glass-panel">
+            <h2 class="article-title">Examen Vânător</h2>
+            <p class="lead-text app-summary-desc" data-i18n="app_short_desc">
+              Aplicație mobilă educațională destinată pregătirii candidaților
+              pentru obținerea permisului de vânătoare în România.
             </p>
+            <div class="app-summary-actions">
+              <a
+                href="/examen-vanator/privacy-policy"
+                class="btn btn-primary"
+                data-i18n="app_privacy_link"
+              >
+                Politica de Confidențialitate (Privacy Policy)
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="info-list">
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">🏢</div>
-                <div>
-                  <strong data-i18n="c_company_lbl">Companie:</strong>
-                  <span>OPTIMUS AI SOLUTIONS SRL</span>
+      <!-- Key App Benefits Section -->
+      <section class="section features-section" id="features">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-subtitle" data-i18n="feat_subtitle"
+              >De Ce OPTIMUS AI SOLUTIONS?</span
+            >
+            <h2 class="section-title" data-i18n="feat_title">
+              Standarde de Calitate &amp; Încredere
+            </h2>
+            <div class="title-bar"></div>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card glass-card">
+              <div class="f-num">01</div>
+              <h3 data-i18n="f_card1_title">Garanția Calității</h3>
+              <p data-i18n="f_card1_text">
+                Toate aplicațiile noastre sunt verificate riguros pentru a oferi
+                stabilitate maximă și securitate datelor utilizatorilor.
+              </p>
+            </div>
+            <div class="feature-card glass-card">
+              <div class="f-num">02</div>
+              <h3 data-i18n="f_card2_title">Actualizări Periodice</h3>
+              <p data-i18n="f_card2_text">
+                Actualizăm constant conținutul și codul aplicațiilor pentru a fi
+                conforme cu ultimele cerințe și versiuni de sisteme de operare.
+              </p>
+            </div>
+            <div class="feature-card glass-card">
+              <div class="f-num">03</div>
+              <h3 data-i18n="f_card3_title">Suport Tehnic Dedicat</h3>
+              <p data-i18n="f_card3_text">
+                Echipa noastră răspunde prompt feedback-ului și solicitărilor de
+                asistență din partea utilizatorilor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Company Details Section -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-card glass-panel">
+            <div class="contact-info">
+              <span class="section-subtitle" data-i18n="contact_subtitle"
+                >Contactează-ne</span
+              >
+              <h2 data-i18n="contact_title">OPTIMUS AI SOLUTIONS SRL</h2>
+              <p data-i18n="contact_desc">
+                Dacă ai întrebări referitoare la aplicația Examen Vânător,
+                sugestii de îmbunătățire sau dorești să colaborăm, nu ezita să
+                ne trimiți un mesaj.
+              </p>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <div class="info-icon" aria-hidden="true">🏢</div>
+                  <div>
+                    <strong data-i18n="c_company_lbl">Companie:</strong>
+                    <span>OPTIMUS AI SOLUTIONS SRL</span>
+                  </div>
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">📍</div>
-                <div>
-                  <strong data-i18n="c_location_lbl">Sediu:</strong>
-                  <span>România</span>
+                <div class="info-item">
+                  <div class="info-icon" aria-hidden="true">📍</div>
+                  <div>
+                    <strong data-i18n="c_location_lbl">Sediu:</strong>
+                    <span>România</span>
+                  </div>
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">📧</div>
-                <div>
-                  <strong data-i18n="c_email_lbl">Email Suport:</strong>
-                  <a href="mailto:contact@optimus-ai-solutions.ro">contact@optimus-ai-solutions.ro</a>
+                <div class="info-item">
+                  <div class="info-icon" aria-hidden="true">📧</div>
+                  <div>
+                    <strong data-i18n="c_email_lbl">Email Suport:</strong>
+                    <a href="mailto:contact@optimus-ai-solutions.ro"
+                      >contact@optimus-ai-solutions.ro</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="brand-name">OPTIMUS AI SOLUTIONS SRL</div>
+          <p data-i18n="footer_rights">
+            © 2026 OPTIMUS AI SOLUTIONS SRL. Toate drepturile rezervate.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="/examen-vanator/privacy-policy" data-i18n="footer_privacy"
+            >Politica de Confidențialitate (Privacy Policy)</a
+          >
+          <button
+            type="button"
+            class="footer-link-btn"
+            command="show-modal"
+            commandfor="terms-modal"
+            id="open-terms-btn"
+            data-i18n="footer_terms"
+          >
+            Termeni și Condiții
+          </button>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <div class="brand-name">OPTIMUS AI SOLUTIONS SRL</div>
-        <p data-i18n="footer_rights">© 2026 OPTIMUS AI SOLUTIONS SRL. Toate drepturile rezervate.</p>
+    <!-- Native Modal Dialog for Terms of Service -->
+    <dialog
+      id="terms-modal"
+      class="modal-dialog glass-panel"
+      aria-labelledby="terms-modal-title"
+      closedby="any"
+    >
+      <form method="dialog" class="modal-close-form">
+        <button
+          type="submit"
+          class="modal-close"
+          id="close-terms-btn"
+          aria-label="Închide"
+          autofocus
+        >
+          &times;
+        </button>
+      </form>
+      <h2 id="terms-modal-title" data-i18n="terms_modal_title">
+        Termeni și Condiții de Utilizare
+      </h2>
+      <div class="modal-scroll-body">
+        <p data-i18n="terms_p1">
+          Prin accesarea și utilizarea aplicațiilor dezvoltate de OPTIMUS AI
+          SOLUTIONS SRL, inclusiv aplicația Examen Vânător, sunteți de acord să
+          respectați acești Termeni și Condiții.
+        </p>
+        <p data-i18n="terms_p2">
+          Conținutul educațional furnizat are caracter de pregătire și învățare
+          individuală. Utilizarea aplicației se face exclusiv pe propria
+          răspundere a utilizatorului.
+        </p>
       </div>
+    </dialog>
 
-      <div class="footer-links">
-        <a href="/examen-vanator/privacy-policy" data-i18n="footer_privacy">Politica de Confidențialitate (Privacy Policy)</a>
-        <button type="button" class="footer-link-btn" command="show-modal" commandfor="terms-modal" id="open-terms-btn" data-i18n="footer_terms">Termeni și Condiții</button>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Native Modal Dialog for Terms of Service -->
-  <dialog id="terms-modal" class="modal-dialog glass-panel" aria-labelledby="terms-modal-title" closedby="any">
-    <form method="dialog" class="modal-close-form">
-      <button type="submit" class="modal-close" id="close-terms-btn" aria-label="Închide" autofocus>&times;</button>
-    </form>
-    <h2 id="terms-modal-title" data-i18n="terms_modal_title">Termeni și Condiții de Utilizare</h2>
-    <div class="modal-scroll-body">
-      <p data-i18n="terms_p1">Prin accesarea și utilizarea aplicațiilor dezvoltate de OPTIMUS AI SOLUTIONS SRL, inclusiv aplicația Examen Vânător, sunteți de acord să respectați acești Termeni și Condiții.</p>
-      <p data-i18n="terms_p2">Conținutul educațional furnizat are caracter de pregătire și învățare individuală. Utilizarea aplicației se face exclusiv pe propria răspundere a utilizatorului.</p>
-    </div>
-  </dialog>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
