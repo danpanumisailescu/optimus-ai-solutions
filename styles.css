@@ -664,6 +664,17 @@ body {
   color: var(--accent);
 }
 
+.contact-email-img {
+  display: block;
+  align-self: flex-start;
+  inline-size: min(100%, 300px);
+  block-size: auto;
+  margin-block-start: 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-sm);
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--card-border);

@@ -62,6 +62,8 @@ const translations = {
     c_company_lbl: "Companie:",
     c_location_lbl: "Sediu:",
     c_email_lbl: "Email Suport:",
+    c_email_alt:
+      "Adresă de e-mail pentru suport (afișată grafic pentru protecție anti-spam)",
 
     // Footer & Legal
     footer_rights:
@@ -134,6 +136,8 @@ const translations = {
     c_company_lbl: "Company:",
     c_location_lbl: "Location:",
     c_email_lbl: "Support Email:",
+    c_email_alt:
+      "Support email address (displayed graphically for anti-spam protection)",
 
     // Footer & Legal
     footer_rights: "© 2026 OPTIMUS AI SOLUTIONS SRL. All rights reserved.",
@@ -157,6 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const termsModal = document.getElementById("terms-modal");
   const openTermsBtn = document.getElementById("open-terms-btn");
   const closeTermsBtn = document.getElementById("close-terms-btn");
+  const contactEmailImg = document.getElementById("contact-email-img");
 
   // --- Theme Toggle Logic ---
   const savedTheme = localStorage.getItem("optimus_theme") || "dark";
@@ -187,6 +192,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (closeTermsBtn && translations[lang]?.close_label) {
       closeTermsBtn.setAttribute("aria-label", translations[lang].close_label);
+    }
+
+    if (contactEmailImg && translations[lang]?.c_email_alt) {
+      contactEmailImg.setAttribute("alt", translations[lang].c_email_alt);
     }
   }
 
