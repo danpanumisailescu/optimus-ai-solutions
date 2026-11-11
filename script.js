@@ -63,7 +63,7 @@ const translations = {
     c_location_lbl: "Sediu:",
     c_email_lbl: "Email Suport:",
     c_email_alt:
-      "Adresă de e-mail pentru suport (afișată grafic pentru protecție anti-spam)",
+      "Adresă de e-mail pentru suport",
 
     // Footer & Legal
     footer_rights:
